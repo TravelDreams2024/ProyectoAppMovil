@@ -8,16 +8,13 @@ La aplicación también contará con un carrito de compras, donde los usuarios p
 
 ![diseno de interfaces](https://github.com/user-attachments/assets/9772f5b2-5111-4ee0-865b-09a8a3435352)
 
-
 ## Características Principales:
 
 * **Autenticación de Usuarios**: Sistema de registro y login para la gestión segura de cuentas de usuario.
-* **Exploración de Destinos Turísticos**: Navegación intuitiva con acceso a galerías multimedia (fotos y videos) que destacan las atracciones de cada destino.
-* **Gestión de Carrito de Compras**: Funcionalidad que permite a los usuarios agregar destinos a un carrito de compras, con opciones para revisar y confirmar sus selecciones antes de la compra.
-* **Procesamiento de Compras**: Implementación de un flujo de compra optimizado para una experiencia de usuario rápida y sin complicaciones.
+* **Exploración de Destinos Turísticos**: Navegación intuitiva con acceso a galerías multimedia (fotos y video) que destacan las atracciones de cada destino.
+* **Gestión de Carrito de Compras**: Funcionalidad que permite a los usuarios agregar destinos a un carrito de compras, con opciones para agregar y eliminar destinos.
 * **Soporte y Contacto**: Opción de contacto directo con la empresa a través de la aplicación para asistencia y consultas.
 * **Integración con Redes Sociales**: Iconos interactivos que permiten la redirección a las plataformas de redes sociales de la empresa para mantenerse al día con las últimas novedades.
-
 
 ## Link Repositorio Anterior:
 https://github.com/TravelDreams2024/ISPC2024
