@@ -4,7 +4,7 @@
 
 Travel Dreams es una aplicación nativa para dispositivos Android, diseñada específicamente para aquellos que desean explorar y comprar destinos turísticos de manera sencilla y eficiente. 
 
-La aplicación también contará con un carrito de compras, donde los usuarios pueden agregar los destinos de su interés antes de proceder al pago, brindando una experiencia de compra organizada y fluida. Además, Travel Dreams está diseñada para expandirse en el futuro, contemplando la incorporación de una función de reserva, que permitirá a los usuarios no solo comprar, sino también reservar sus viajes directamente desde la misma plataforma, ofreciendo así una solución integral para la planificación de viaje
+La aplicación también contará con un carrito de compras, donde los usuarios pueden agregar los destinos de su interés antes de proceder al pago, brindando una experiencia de compra organizada y fluida. Además, Travel Dreams está diseñada para expandirse en el futuro, contemplando la incorporación de una función de reserva, que permitirá a los usuarios no solo comprar, sino también reservar sus viajes directamente desde la misma plataforma, ofreciendo así una solución integral para la planificación de viajes.
 
 ![diseno de interfaces](https://github.com/user-attachments/assets/9772f5b2-5111-4ee0-865b-09a8a3435352)
 
