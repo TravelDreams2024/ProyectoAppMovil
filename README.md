@@ -2,13 +2,24 @@
 
 ## Descripción del Proyecto: Portal de Venta de Viajes Turísticos
 
-El portal ofrecerá a los usuarios la posibilidad de explorar destinos turísticos, brindando información detallada sobre cada uno para que puedan seleccionar los paquetes que mejor se adapten a sus preferencias y necesidades. Una vez seleccionados, los usuarios podrán comprar los paquetes turísticos a través de la página utilizando métodos de pago.
+Travel Dreams es una aplicación nativa para dispositivos Android, diseñada específicamente para aquellos que desean explorar y comprar destinos turísticos de manera sencilla y eficiente. 
 
-## Objetivo del Proyecto:
+La aplicación también contará con un carrito de compras, donde los usuarios pueden agregar los destinos de su interés antes de proceder al pago, brindando una experiencia de compra organizada y fluida. Además, Travel Dreams está diseñada para expandirse en el futuro, contemplando la incorporación de una función de reserva, que permitirá a los usuarios no solo comprar, sino también reservar sus viajes directamente desde la misma plataforma, ofreciendo así una solución integral para la planificación de viaje
 
-El objetivo principal del proyecto es ofrecer a los usuarios una experiencia de compra de viajes turísticos fácil, intuitiva y segura. Brindamos la oportunidad de descubrir y explorar una amplia gama de destinos, tanto nacionales como internacionales, desde la comodidad de su hogar. Facilitamos la planificación de sus próximas vacaciones, permitiendo a los usuarios disfrutar de los encantos y maravillas del mundo con total tranquilidad.
+![diseno de interfaces](https://github.com/user-attachments/assets/9772f5b2-5111-4ee0-865b-09a8a3435352)
 
-## Repositorio Anterior:
+
+## Características Principales:
+
+* **Autenticación de Usuarios**: Sistema de registro y login para la gestión segura de cuentas de usuario.
+* **Exploración de Destinos Turísticos**: Navegación intuitiva con acceso a galerías multimedia (fotos y videos) que destacan las atracciones de cada destino.
+* **Gestión de Carrito de Compras**: Funcionalidad que permite a los usuarios agregar destinos a un carrito de compras, con opciones para revisar y confirmar sus selecciones antes de la compra.
+* **Procesamiento de Compras**: Implementación de un flujo de compra optimizado para una experiencia de usuario rápida y sin complicaciones.
+* **Soporte y Contacto**: Opción de contacto directo con la empresa a través de la aplicación para asistencia y consultas.
+* **Integración con Redes Sociales**: Iconos interactivos que permiten la redirección a las plataformas de redes sociales de la empresa para mantenerse al día con las últimas novedades.
+
+
+## Link Repositorio Anterior:
 https://github.com/TravelDreams2024/ISPC2024
 
 ## Integrantes:
