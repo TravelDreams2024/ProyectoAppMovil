@@ -1,4 +1,4 @@
-![Android SDK](https://img.shields.io/badge/Android%20SDK-33.x-brightgreen)
+![Android](https://img.shields.io/badge/Android-Java-green)
 ![Django](https://img.shields.io/badge/Django-4.x-blue)
 
 # PROYECTO Travel Dreams
