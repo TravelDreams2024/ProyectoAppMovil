@@ -1,3 +1,6 @@
+![Android SDK](https://img.shields.io/badge/Android%20SDK-33.x-brightgreen)
+![Django](https://img.shields.io/badge/Django-4.x-blue)
+
 # PROYECTO Travel Dreams
 
 ## Descripción del Proyecto: Portal de Venta de Viajes Turísticos
@@ -10,11 +13,11 @@ La aplicación también contará con un carrito de compras, donde los usuarios p
 
 ## Características Principales:
 
-* **Autenticación de Usuarios**: Sistema de registro y login para la gestión segura de cuentas de usuario.
-* **Exploración de Destinos Turísticos**: Navegación intuitiva con acceso a galerías multimedia (fotos y video) que destacan las atracciones de cada destino.
-* **Gestión de Carrito de Compras**: Funcionalidad que permite a los usuarios agregar destinos a un carrito de compras, con opciones para agregar y eliminar destinos.
-* **Soporte y Contacto**: Opción de contacto directo con la empresa a través de la aplicación para asistencia y consultas.
-* **Integración con Redes Sociales**: Iconos interactivos que permiten la redirección a las plataformas de redes sociales de la empresa para mantenerse al día con las últimas novedades.
+* **Pantalla de Bienvenida**: Una pantalla inicial con una imagen atractiva y un botón de "Explorar" para guiar al usuario a la sección de destinos turísticos.
+* **Exploración de Destinos Turísticos**: Una lista de destinos turísticos disponibles con título, subtítulo, e imagen. Los usuarios pueden seleccionar un destino para ver más detalles.
+* **Información de Destino Individual**: Pantalla que muestra información detallada de un destino seleccionado, incluyendo título, descripción, fotos, videos e información relevante. Incluye un botón de "Comprar".
+* **Inicio de Sesión/Registro**: Funcionalidad para que los usuarios inicien sesión o se registren antes de realizar una compra. Incluye seguridad robusta y manejo seguro de datos personales.
+* **Ciberseguridad**: Protección de datos personales y de pago, asegurando la confidencialidad y seguridad durante la exploración y compra de destinos turísticoss.
 
 ## Link Repositorio Anterior:
 https://github.com/TravelDreams2024/ISPC2024
