@@ -1,4 +1,4 @@
-package com.example.traveldreamsapp;
+package com.example.myapplication;
 
 import android.os.Bundle;
 
