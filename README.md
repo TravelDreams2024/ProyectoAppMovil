@@ -1,14 +1,25 @@
+![Android](https://img.shields.io/badge/Android-Java-green)
+![Django](https://img.shields.io/badge/Django-4.x-blue)
+
 # PROYECTO Travel Dreams
 
 ## Descripción del Proyecto: Portal de Venta de Viajes Turísticos
 
-El portal ofrecerá a los usuarios la posibilidad de explorar destinos turísticos, brindando información detallada sobre cada uno para que puedan seleccionar los paquetes que mejor se adapten a sus preferencias y necesidades. Una vez seleccionados, los usuarios podrán comprar los paquetes turísticos a través de la página utilizando métodos de pago.
+Travel Dreams es una aplicación nativa para dispositivos Android, diseñada específicamente para aquellos que desean explorar y comprar destinos turísticos de manera sencilla y eficiente. 
 
-## Objetivo del Proyecto:
+La aplicación también contará con un carrito de compras, donde los usuarios pueden agregar los destinos de su interés antes de proceder al pago, brindando una experiencia de compra organizada y fluida. Además, Travel Dreams está diseñada para expandirse en el futuro, contemplando la incorporación de una función de reserva, que permitirá a los usuarios no solo comprar, sino también reservar sus viajes directamente desde la misma plataforma, ofreciendo así una solución integral para la planificación de viajes.
 
-El objetivo principal del proyecto es ofrecer a los usuarios una experiencia de compra de viajes turísticos fácil, intuitiva y segura. Brindamos la oportunidad de descubrir y explorar una amplia gama de destinos, tanto nacionales como internacionales, desde la comodidad de su hogar. Facilitamos la planificación de sus próximas vacaciones, permitiendo a los usuarios disfrutar de los encantos y maravillas del mundo con total tranquilidad.
+![diseno de interfaces](https://github.com/user-attachments/assets/9772f5b2-5111-4ee0-865b-09a8a3435352)
 
-## Repositorio Anterior:
+## Características Principales:
+
+* **Pantalla de Bienvenida**: Una pantalla inicial con una imagen atractiva y un botón de "Explorar" para guiar al usuario a la sección de destinos turísticos.
+* **Exploración de Destinos Turísticos**: Una lista de destinos turísticos disponibles con título, subtítulo, e imagen. Los usuarios pueden seleccionar un destino para ver más detalles.
+* **Información de Destino Individual**: Pantalla que muestra información detallada de un destino seleccionado, incluyendo título, descripción, fotos, videos e información relevante. Incluye un botón de "Comprar".
+* **Inicio de Sesión/Registro**: Funcionalidad para que los usuarios inicien sesión o se registren antes de realizar una compra. Incluye seguridad robusta y manejo seguro de datos personales.
+* **Ciberseguridad**: Protección de datos personales y de pago, asegurando la confidencialidad y seguridad durante la exploración y compra de destinos turísticoss.
+
+## Link Repositorio Anterior:
 https://github.com/TravelDreams2024/ISPC2024
 
 ## Integrantes:

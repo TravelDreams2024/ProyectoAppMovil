@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav">#240B5C</color>
+    <color name="logo1">#D32788</color>
+    <color name="deg1">#F3297F</color>
+    <color name="deg2">#A176BC</color>
+    <color name="deg3">#4EC3F9</color>
+    <color name="btn">#800352</color>
+    <color name="grey">#b8b4b8</color>
+</resources>
