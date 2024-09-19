@@ -16,6 +16,10 @@
             android:name=".registro"
             android:exported="false" />
         <activity
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
             android:name=".destinos_item"
             android:exported="false" />
         <activity

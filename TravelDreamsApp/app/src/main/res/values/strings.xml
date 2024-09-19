@@ -1,11 +1,8 @@
 <resources>
     <string name="app_name">TravelDreamsApp</string>
 
-
-
-
-
-
+    <!--Login-->
+    <string name="titulo_login">Iniciar Sesión</string>
 
     <!--Registro -FALTA!!! -->
     <string name="prompt_email">Email</string>
