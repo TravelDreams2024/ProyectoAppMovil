@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp">
 
-    <!-- FALTA Agregar String-->
     <!-- Título de la Pantalla -->
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/titulo_login"
+        android:text="@string/register_title"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp"
         android:textColor="@android:color/black"/>
 
-    <!-- Campo de Usuario -->
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
-        android:inputType="text"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp" />
 
-    <!-- Campo de Contraseña -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="8dp" />
+
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
+        android:hint="@string/hint_password"
         android:inputType="textPassword"
-        android:padding="12dp"
-        android:layout_marginBottom="24dp"/>
-
-    <!-- Botón de Iniciar Sesión -->
-    <Button
-        android:id="@+id/buttonLogin"
+        android:layout_marginBottom="8dp" />
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
-        android:padding="12dp"/>
+        android:hint="@string/hint_confirm_password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button" />
 
 </LinearLayout>
