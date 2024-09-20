@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TravelDreamsApp</string>
+    <!--Registro -->
+    <string name="prompt_email">Email</string>
+    <!-- Títulos y botones -->
+    <string name="register_title">Registrarse</string>
+    <string name="register_button">Registrarse</string>
 </resources>
