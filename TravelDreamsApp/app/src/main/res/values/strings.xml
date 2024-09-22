@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TravelDreamsApp</string>
     <!--Registro -->
-    <string name="register_title">Ingrese sus Datos</string>
+    <string name="register_title">INGRESE SUS DATOS</string>
     <!-- Títulos y botones -->
     <string name="hint_name">Nombre y Apellido</string>
     <string name="hint_email">Correo Electrónico</string>
