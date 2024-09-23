@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">TravelDreamsApp</string>
+    <!--Bienvenida - 1er Pantalla -->                       
     <string name="travel">TRAVEL</string>
     <string name="dreams">DREAMS</string>
-    <string name="explorar">Explorar</string>
+    <string name="explorar">Explorar</string>                                            
+                       
+    <!--Registro -->
+    <string name="register_title">INGRESE SUS DATOS</string>
+    <!-- Títulos y botones -->
+    <string name="hint_name">Nombre y Apellido</string>
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="register_button">Registrarse</string>
 </resources>
