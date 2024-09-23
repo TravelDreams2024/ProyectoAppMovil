@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">TravelDreamsApp</string>
+    <!--Bienvenida - 1er Pantalla -->                       
+    <string name="travel">TRAVEL</string>
+    <string name="dreams">DREAMS</string>
+    <string name="explorar">Explorar</string>                                            
+                       
     <!--Registro -->
     <string name="register_title">INGRESE SUS DATOS</string>
     <!-- Títulos y botones -->
