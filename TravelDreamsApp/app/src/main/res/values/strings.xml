@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">TravelDreamsApp</string>
-    <!--Bienvenida - 1er Pantalla -->                       
+
+    <!--Bienvenida - 1er Pantalla -->
     <string name="travel">TRAVEL</string>
     <string name="dreams">DREAMS</string>
-    <string name="explorar">Explorar</string>                                            
-                       
+    <string name="explorar">Explorar</string>
+
     <!--Registro -->
     <string name="register_title">INGRESE SUS DATOS</string>
+
     <!-- Títulos y botones -->
     <string name="hint_name">Nombre y Apellido</string>
     <string name="hint_email">Correo Electrónico</string>
@@ -14,4 +16,37 @@
     <string name="hint_confirm_password">Confirmar Contraseña</string>
     <string name="privacy_policy">Política de Privacidad</string>
     <string name="register_button">Registrarse</string>
+
+    <!--Nosotros-->
+    <string name="quienes_somos">¿Quiénes somos?</string>
+    <string name="description_quienes_somos">Desde hace 20 años, Travel Dreams ha sido la brújula que guía a aventureros de todas las edades en sus viajes más esperados. Nuestra misión trasciende un simple itinerario; es una promesa de aventura, descubrimiento y recuerdos que perduran toda la vida.</string>
+
+    <!-- Nuestro Equipo -->
+    <string name="equipo">Nuestro Equipo</string>
+    <string name="m_1">Cantarino, Emmanuel</string>
+    <string name="m_1_profile">Full Stack</string>
+
+    <string name="m_2">Cascallares, Facundo</string>
+    <string name="m_2_profile">Full Stack</string>
+
+    <string name="m_3">Fernandez, Claudio Ranses</string>
+    <string name="m_3_profile">Full Stack</string>
+
+    <string name="m_4">González, Natalia</string>
+    <string name="m_4_profile">Full Stack</string>
+
+    <string name="m_5">Navarrete, Romina Gabriela</string>
+    <string name="m_5_profile">Full Stack</string>
+
+    <string name="m_6">Oro, Elias</string>
+    <string name="m_6_profile">Full Stack</string>
+
+    <string name="m_7">Ortiz, Fernando Ariel</string>
+    <string name="m_7_profile">Full Stack</string>
+
+    <string name="m_8">Soto Valenzuela, Juan Gabriel</string>
+    <string name="m_8_profile">Full Stack</string>
+
 </resources>
+
+
