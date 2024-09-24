@@ -6,6 +6,9 @@
     <string name="dreams">DREAMS</string>
     <string name="explorar">Explorar</string>
 
+    <!--Login -->
+    <string name="titulo_login">INICIAR SESION</string>
+
     <!--Registro -->
     <string name="register_title">INGRESE SUS DATOS</string>
 
