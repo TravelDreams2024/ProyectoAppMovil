@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".login"
+    android:background="@drawable/fondo_degradado">
+
+<!-- FALTA Agregar String-->
+<!-- Título de la Pantalla -->
+<TextView
+    android:id="@+id/textViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/titulo_login"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="24dp"
+    android:textColor="@android:color/black"/>
+
+<!-- Campo de Usuario -->
+<EditText
+    android:id="@+id/editTextUsername"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_email"
+    android:textColor="@android:color/black"
+    android:background="@drawable/edittext_background"
+    android:inputType="text"
+    android:padding="12dp"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Campo de Contraseña -->
+<EditText
+    android:id="@+id/editTextPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_password"
+    android:background="@drawable/edittext_background"
+    android:inputType="textPassword"
+    android:padding="12dp"
+    android:layout_marginBottom="24dp"/>
+
+<!-- Botón de Iniciar Sesión -->
+<Button
+    android:id="@+id/buttonLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Iniciar Sesión"
+    android:padding="12dp"
+    android:textSize="20sp"/>
+
+</LinearLayout>

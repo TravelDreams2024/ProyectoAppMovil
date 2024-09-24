@@ -16,17 +16,26 @@
             android:name=".contacto"
             android:exported="false" />
         <activity
+            android:name=".nosotros"
+            android:exported="false" />
+        <activity
+            android:name=".registro"
+            android:exported="false" />
+        <activity
             android:name=".destinos_item"
+            android:exported="false" />
+        <activity
+            android:name=".activity_destinos_explore"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
         </activity>
     </application>
+    </manifest>
 
-</manifest>
