@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/fondo_degradado"
+    android:background="@drawable/fondo_degradado_dos"
         >
 
     <!-- Título de la Pantalla -->
