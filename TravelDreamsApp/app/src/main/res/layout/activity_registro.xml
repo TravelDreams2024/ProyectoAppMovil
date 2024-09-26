@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo_degradado_dos"
+        >
+
+    <!-- Título de la Pantalla -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!-- Nombre y Apellido -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_background"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColorHint="@color/deg2"
+        android:autofillHints="name"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        />
+
+    <!-- Correo Electrónico -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_background"
+
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColorHint="@color/deg2"
+        android:autofillHints="emailAddress"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        />
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_background"
+
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColorHint="@color/deg2"
+        android:autofillHints="password"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        />
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_background"
+
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColorHint="@color/deg2"
+        android:autofillHints="password"
+        android:hint="@string/hint_confirm_password"
+        android:inputType="textPassword"
+        />
+
+    <!-- Casilla -->
+    <CheckBox
+        android:id="@+id/checkBoxPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/privacy_policy"
+        />
+
+    <!-- Boton Registro -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_height="wrap_content"
+
+        android:layout_width="224dp"
+
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:text="@string/register_button"
+        />
+</LinearLayout>
