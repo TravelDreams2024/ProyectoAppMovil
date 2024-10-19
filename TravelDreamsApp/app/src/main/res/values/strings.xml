@@ -6,11 +6,50 @@
     <string name="dreams">DREAMS</string>
     <string name="explorar">Explorar</string>
 
+    <!--Navigation Drawer -->
+    <string name="nav_home">Home</string>
+    <string name="nav_destinos">Destinos</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="nav_nosotros">Sobre Nosotros</string>
+    <string name="nav_contacto">Contacto</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_destinos">Destinos</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_nosotros">Nosotros</string>
+
+    <string name="title_activity_navigator_drawer">NavigatorDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--Perfil  - NavigatorDrawer-->
+    <string name="plogin">Iniciar Sesión</string>
+    <string name="pregister">Registrarse</string>
+
     <!--Login -->
     <string name="titulo_login">INICIAR SESION</string>
 
+
     <!--Registro -->
     <string name="register_title">INGRESE SUS DATOS</string>
+
+    <!--Destinos - 2da pantalla -->
+    <string name="titulo_destino">TITULO DEL DESTINO</string>
+    <string name="descripcion_destino">Descripción corta del destino</string>
+    <string name="precio_destino">$00.00</string>
+    <string name="boton_comprar">Comprar</string>
+
+    <!--Destinos - 2da pantalla  - Content Description-->
+    <string name="descripcion_imagen">Imagen del destino</string>
+    <string name="descripcion_titulo_destino">Título del destino mostrado en la tarjeta</string> <!-- Nueva descripción -->
+    <string name="descripcion_precio">Precio del destino mostrado en la tarjeta</string> <!-- Nueva descripción -->
+    <string name="descripcion_boton_comprar">Botón para comprar el destino</string>
 
     <!-- Títulos y botones -->
     <string name="hint_name">Nombre y Apellido</string>
