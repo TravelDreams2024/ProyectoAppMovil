@@ -8,7 +8,6 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <!-- Contenido principal de la pantalla - RecyclerView-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -20,8 +19,6 @@
             android:layout_height="match_parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Menu lateral (NavigationView) que se desliza -->
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"

@@ -38,6 +38,8 @@ public class DestinosAdapter extends RecyclerView.Adapter<DestinosAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.tv_nombre_Destino.setText(destinos.get(position).getNombre_Destino());
+        holder.tv_descripcion.setText(destinos.get(position).getDescripcion());
+        holder.tv_precio.setText(String.format("USD %.2f", destinos.get(position).getPrecio_Destino()));
         Glide.with(context).load(destinos.get(position).getImage()).into(holder.iv_image);
 
     }
