@@ -1,7 +1,4 @@
 package com.example.traveldreamsapp.ui.contacto;
-
-import com.example.traveldreamsapp.databinding.FragmentContactoBinding;import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
+import com.example.traveldreamsapp.databinding.FragmentContactoBinding;
 
 public class ContactoFragment extends Fragment {
 
@@ -23,6 +20,7 @@ public class ContactoFragment extends Fragment {
         View root = binding.getRoot();
         return root;
     }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
