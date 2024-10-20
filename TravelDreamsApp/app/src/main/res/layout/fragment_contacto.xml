@@ -61,7 +61,7 @@
                 android:background="@drawable/edittext_background"
                 android:hint="@string/hint_cname"
                 android:padding="12dp"
-                android:textColor="#333333" />
+                android:textColor="#4A4A4A" />
 
             <EditText
                 android:id="@+id/editTextEmail"
@@ -97,4 +97,4 @@
                 android:textSize="18sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout></androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
