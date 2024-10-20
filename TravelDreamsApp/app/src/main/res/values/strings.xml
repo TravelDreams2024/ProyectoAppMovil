@@ -89,6 +89,14 @@
     <string name="m_8">Soto Valenzuela, Juan Gabriel</string>
     <string name="m_8_profile">Full Stack</string>
 
+    <!--Fomulario Contacto -->
+    <string name="contact_title">Contacto</string>
+    <string name="contact_subtitle">Si tienes preguntas, comentarios o sugerencias, por favor, no dudes en enviarnos un mensaje.</string>
+    <string name="hint_cname">Nombre</string>
+    <string name="hint_cemail">Correo Electrónico</string>
+    <string name="hint_message">Escribe tu mensaje aquí...</string>
+    <string name="submit_button">Enviar</string>
+
 </resources>
 
 
