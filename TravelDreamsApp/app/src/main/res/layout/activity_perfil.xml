@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:background="@drawable/fondo_degradado_dos"
-    android:layout_height="match_parent"
-    tools:context=".perfil">
+    android:layout_height="match_parent">
 
     <!-- Foto de perfil en un círculo -->
 
