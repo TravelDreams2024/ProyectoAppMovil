@@ -1,305 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/main"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="16dp">
-
-<TextView
-    android:id="@+id/textViewTitle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    android:gravity="center"
-    android:text="@string/quienes_somos"
-    android:textSize="24sp"
-    android:textStyle="bold" />
-
-<TextView
-    android:id="@+id/textViewDescription"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/description_quienes_somos"
-    android:textSize="16sp"
-    android:lineSpacingExtra="4dp"
-    android:gravity="center"/>
-
-<!-- Sección de Nuestro Equipo -->
-<TextView
-    android:id="@+id/textViewTeamTitle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/equipo"
-    android:textSize="24sp"
-    android:textStyle="bold"
-    android:layout_marginBottom="16dp"
-    android:gravity="center"/>
-
-<GridLayout
-    android:id="@+id/gridLayoutTeam"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:columnCount="2"
-    android:layout_marginBottom="16dp">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <!-- Miembro del equipo 1 -->
-
-    <LinearLayout
+    <!-- Título de la sección -->
+    <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
+        android:layout_gravity="center"
+        android:text="Quiénes Somos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/men"/>
-
-        <TextView
-            android:id="@+id/textViewName1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_1"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_1_profile"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Miembro del equipo 2 -->
-
-    <LinearLayout
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
+        android:layout_gravity="center"
+        android:text="Conoce al equipo detrás de la aplicación"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/men"/>
-
-        <TextView
-            android:id="@+id/textViewName2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_2"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_2_profile"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Miembro del equipo 3 -->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <!-- RecyclerView para mostrar la lista de integrantes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewIntegrantes"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/men"/>
-
-        <TextView
-            android:id="@+id/textViewName3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_3"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_3_profile"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Miembro del equipo 4 -->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/women"/>
-
-        <TextView
-            android:id="@+id/textViewName4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_4"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_4_profile"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Miembro del equipo 5 -->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/women"/>
-
-        <TextView
-            android:id="@+id/textViewName5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_5"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_5_profile"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Miembro del equipo 6 -->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/men"/>
-
-        <TextView
-            android:id="@+id/textViewName6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_6"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_6"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Miembro del equipo 7 -->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/men"/>
-
-        <TextView
-            android:id="@+id/textViewName7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_7"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_7"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Miembro del equipo 8 -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textViewName8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_8"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/textViewProfile8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/m_8"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_row="0"
-        android:src="@drawable/men" />
-
-
-</GridLayout>
+        android:layout_gravity="center" />
 
 </LinearLayout>
