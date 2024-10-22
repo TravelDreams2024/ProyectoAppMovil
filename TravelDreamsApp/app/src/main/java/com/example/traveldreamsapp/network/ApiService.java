@@ -1,12 +1,15 @@
 package com.example.traveldreamsapp.network;
 
+
 import com.example.traveldreamsapp.Integrante;
 import com.example.traveldreamsapp.models.Destinos;
 
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 public interface ApiService {
@@ -18,4 +21,6 @@ public interface ApiService {
 
     @GET("api/v1/nosotros/")
     Call<List<Integrante>> getIntegrantes();
+    @POST("login/")
+    Call<LoginResponse> login(@Body LoginRequest loginRequest);
 }
