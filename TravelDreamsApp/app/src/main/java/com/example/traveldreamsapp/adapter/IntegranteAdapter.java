@@ -39,7 +39,7 @@ public class IntegranteAdapter extends RecyclerView.Adapter<IntegranteAdapter.In
         holder.linkedinTextView.setText(integrante.getLinkedin());
         holder.rolTextView.setText("Rol ID: " + integrante.getIdRol());
 
-        // Usar Glide para cargar la imagen desde la URL
+        // Usar Glide para cargar la imagen desde la URL .
         Glide.with(context)
                 .load(integrante.getImagen())
                 .into(holder.imagenImageView);
