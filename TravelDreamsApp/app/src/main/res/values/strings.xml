@@ -34,7 +34,9 @@
 
     <!--Login -->
     <string name="titulo_login">INICIAR SESION</string>
-
+    <string name="titulo_login_name">Bienvenido</string>
+    <string name="forgot_pasword">Olvidé mi contraseña</string>
+    <string name="msjregistrate">¿No tienes cuenta?¡Registrate aqui!</string>
 
     <!--Registro -->
     <string name="register_title">INGRESE SUS DATOS</string>
