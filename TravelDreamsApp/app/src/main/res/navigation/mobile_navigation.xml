@@ -22,4 +22,11 @@
         android:name="com.example.traveldreamsapp.ui.perfil.PerfilFragment"
         android:label="@string/menu_perfil"
         tools:layout="@layout/fragment_perfil" />
+
+    <!-- Agregar la actividad Nosotros -->
+    <activity
+        android:id="@+id/nav_nosotros"
+        android:name="com.example.traveldreamsapp.Nosotros"
+        android:label="@string/menu_nosotros"
+        tools:layout="@layout/activity_nosotros" />
 </navigation>
