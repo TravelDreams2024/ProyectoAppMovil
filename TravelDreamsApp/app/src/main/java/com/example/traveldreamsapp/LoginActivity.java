@@ -15,6 +15,7 @@ import com.example.traveldreamsapp.network.ApiService;
 import com.example.traveldreamsapp.network.LoginRequest;
 import com.example.traveldreamsapp.network.LoginResponse;
 
+
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -80,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, NavigatorDrawer.class);
                                     startActivity(intent);
                                     finish(); // Cierra la pantalla de login
                                 }
