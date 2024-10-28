@@ -28,6 +28,12 @@
         <activity
             android:name=".NavigatorDrawer"
             android:exported="false" />
-    </application>
+
+        <activity android:name=".LoginActivity"
+            android:exported="true" />
+
+        <activity android:name=".RegistroActivity"
+            android:exported="true" />
+          </application>
 
 </manifest>
