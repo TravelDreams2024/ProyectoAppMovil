@@ -5,20 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    tools:context=".DashboardPerfil">
 
     <!-- Fondo con imagen de degradado -->
     <ImageView
-        android:id="@+id/bgImageView"
+        android:id="@+id/bgImageView2"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/dashboard_backg"
+        android:src="@drawable/dashboard"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Espacio para el logo -->
     <ImageView
-        android:id="@+id/logoImageView"
+        android:id="@+id/logoImageView2"
         android:layout_width="129dp"
         android:layout_height="130dp"
         android:layout_marginTop="24dp"
@@ -28,8 +27,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Botón Mi Perfil -->
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

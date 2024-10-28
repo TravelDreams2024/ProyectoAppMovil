@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Dashboard">
+    android:orientation="vertical">
 
     <!-- Contenedor para imagen de fondo y logo -->
     <FrameLayout
@@ -16,7 +15,7 @@
             android:id="@+id/gradient_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_606"
+            android:src="@drawable/dashboard"
             android:scaleType="centerCrop" />
 
         <!-- Logo en el centro de la imagen degradada -->
