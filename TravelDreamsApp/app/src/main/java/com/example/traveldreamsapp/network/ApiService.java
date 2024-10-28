@@ -2,6 +2,8 @@ package com.example.traveldreamsapp.network;
 
 
 import com.example.traveldreamsapp.models.Destinos;
+import com.example.traveldreamsapp.models.RegisterRequest;
+import com.example.traveldreamsapp.models.RegisterResponse;
 
 import java.util.List;
 
@@ -20,4 +22,7 @@ public interface ApiService {
 
     @POST("login/")
     Call<LoginResponse> login(@Body LoginRequest loginRequest);
+
+    @POST("api/v1/register/")
+    Call<RegisterResponse> registerUser(@Body RegisterRequest registerRequest);
 }
