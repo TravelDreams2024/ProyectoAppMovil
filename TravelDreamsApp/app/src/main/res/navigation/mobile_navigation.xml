@@ -23,10 +23,16 @@
         android:label="@string/menu_perfil"
         tools:layout="@layout/fragment_perfil" />
 
-    <!-- Agregar la actividad Nosotros -->
-    <activity
+    <fragment
         android:id="@+id/nav_nosotros"
-        android:name="com.example.traveldreamsapp.Nosotros"
+        android:name="com.example.traveldreamsapp.ui.nosotros.NosotrosFragment"
         android:label="@string/menu_nosotros"
-        tools:layout="@layout/activity_nosotros" />
+        tools:layout="@layout/fragment_nosotros" />
+
+    <fragment
+        android:id="@+id/nav_contacto"
+        android:name="com.example.traveldreamsapp.ui.contacto.ContactoFragment"
+        android:label="@string/menu_contacto"
+        tools:layout="@layout/fragment_contacto" />
+
 </navigation>

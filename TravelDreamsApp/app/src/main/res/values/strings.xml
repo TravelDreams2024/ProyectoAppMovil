@@ -35,6 +35,9 @@
     <!--Login -->
     <string name="titulo_login">INICIAR SESION</string>
     <string name="titulo_login_name">Bienvenido</string>
+    <string name="hint_first_name">Nombre</string>
+    <string name="hint_last_name">Apellido</string>
+    <string name="btn_login">Iniciar sesión</string>
     <string name="forgot_pasword">Olvidé mi contraseña</string>
     <string name="msjregistrate">¿No tienes cuenta?¡Registrate aqui!</string>
 
