@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.nosotros.NosotrosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/quienes_somos"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewFoto"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/quienes_somos"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="imagen de nuestras oficinas" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_quienes_somos"
+            android:textSize="18sp"
+            android:layout_marginBottom="20sp"
+            android:lineSpacingExtra="4dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Nueva sección para redes sociales -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Síguenos en nuestras redes sociales"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/iconInstagram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_instagram"
+                android:contentDescription="Ícono de Instagram"
+                android:layout_marginEnd="16dp"
+                android:onClick="showInstagramInfo" />
+
+            <ImageView
+                android:id="@+id/iconFacebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_facebook"
+                android:contentDescription="Ícono de Facebook"
+                android:onClick="showFacebookInfo" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
