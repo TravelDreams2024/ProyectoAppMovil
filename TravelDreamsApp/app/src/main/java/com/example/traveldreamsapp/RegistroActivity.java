@@ -1,7 +1,9 @@
 package com.example.traveldreamsapp;
 
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -42,6 +44,9 @@ public class RegistroActivity extends AppCompatActivity {
         checkBoxPrivacy = findViewById(R.id.checkBoxPrivacy);
         buttonRegister = findViewById(R.id.buttonRegister);
 
+        // Agregar TextWatcher para validaciones en tiempo real
+        addTextWatchers();
+
         // Configuración del botón de registro
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +55,57 @@ public class RegistroActivity extends AppCompatActivity {
                     registerUser();
                 } else {
                     Toast.makeText(RegistroActivity.this, "Debes aceptar la política de privacidad", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    private void addTextWatchers() {
+        // Watcher para el nombre
+        editTextName.addTextChangedListener(new SimpleTextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (TextUtils.isEmpty(s)) {
+                    Toast.makeText(RegistroActivity.this, "El nombre es obligatorio", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        // Watcher para el apellido
+        editTextLastName.addTextChangedListener(new SimpleTextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (TextUtils.isEmpty(s)) {
+                    Toast.makeText(RegistroActivity.this, "El apellido es obligatorio", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        // Watcher para el correo electrónico
+        editTextEmail.addTextChangedListener(new SimpleTextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {
+                isEmailValid(s.toString());
+            }
+        });
+
+        // Watcher para la contraseña
+        editTextPassword.addTextChangedListener(new SimpleTextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {
+                String passwordErrors = getPasswordErrors(s.toString());
+                if (!passwordErrors.isEmpty()) {
+                    Toast.makeText(RegistroActivity.this, passwordErrors, Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        // Watcher para la confirmación de contraseña
+        editTextConfirmPassword.addTextChangedListener(new SimpleTextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (!s.toString().equals(editTextPassword.getText().toString())) {
+                    Toast.makeText(RegistroActivity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -69,13 +125,11 @@ public class RegistroActivity extends AppCompatActivity {
             return;
         }
         if (!isEmailValid(email)) {
-            Toast.makeText(this, "Correo no es de un dominio válido", Toast.LENGTH_SHORT).show();
             return;
         }
         String passwordErrors = getPasswordErrors(password);
         if (!passwordErrors.isEmpty()) {
-            Toast.makeText(this, passwordErrors, Toast.LENGTH_LONG).show();
-            return;
+            return; //
         }
         if (!password.equals(confirmPassword)) {
             Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
@@ -91,8 +145,6 @@ public class RegistroActivity extends AppCompatActivity {
             public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
-                } else if (response.code() == 400) {
-                    Toast.makeText(RegistroActivity.this, "Correo electrónico ya registrado", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(RegistroActivity.this, "Error en el registro", Toast.LENGTH_SHORT).show();
                 }
@@ -107,11 +159,14 @@ public class RegistroActivity extends AppCompatActivity {
 
     // Método para validar correo
     private boolean isEmailValid(String email) {
-        String[] dominiosValidos = {"@gmail.com", "@yahoo.com", "@hotmail.com"};
-        for (String dominio : dominiosValidos) {
-            if (email.endsWith(dominio)) return true;
+        String emailPattern = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$";
+        if (email.matches(emailPattern)) {
+            return true;
+        } else {
+            // Mostrar mensaje de error si el correo no es válido
+            Toast.makeText(this, "Correo electrónico no válido", Toast.LENGTH_SHORT).show();
+            return false;
         }
-        return false;
     }
 
     // Método para validar contraseña y devolver los errores como un solo mensaje
@@ -128,5 +183,16 @@ public class RegistroActivity extends AppCompatActivity {
         }
         return errors.toString().trim();  // Retorna los errores con saltos de línea
     }
-}
 
+    // Clase interna para simplificar el uso de TextWatcher
+    private abstract class SimpleTextWatcher implements TextWatcher {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+        @Override
+        public abstract void afterTextChanged(Editable s);
+    }
+}
