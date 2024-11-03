@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         // Configurar Retrofit
         OkHttpClient client = new OkHttpClient.Builder().build();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dtapp.pythonanywhere.com/api/v1/")
+                .baseUrl("https://dtapp.pythonanywhere.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

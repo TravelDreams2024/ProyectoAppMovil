@@ -20,7 +20,7 @@ public interface ApiService {
     @GET("api/v1/destinos/{id_destino}")
     Call<Destinos> getDestinoById(@Path("id_destino") int id);
 
-    @POST("login/")
+    @POST("api/v1/login/")
     Call<LoginResponse> login(@Body LoginRequest loginRequest);
 
     @POST("api/v1/register/")
