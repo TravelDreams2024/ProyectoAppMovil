@@ -146,7 +146,18 @@ public class RegistroActivity extends AppCompatActivity {
                 if (response.isSuccessful() && response.body() != null) {
                     Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(RegistroActivity.this, "Error en el registro", Toast.LENGTH_SHORT).show();
+                    try {
+                        // Leemos el error body como un String
+                        String errorBody = response.errorBody().string();
+                        if (response.code() == 409 || errorBody.contains("Duplicate entry")) {
+                            Toast.makeText(RegistroActivity.this, "Correo electrónico ya registrado", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(RegistroActivity.this, "Error en el registro", Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (Exception e) {
+                        Toast.makeText(RegistroActivity.this, "Error en el registro", Toast.LENGTH_SHORT).show();
+                        e.printStackTrace();
+                    }
                 }
             }
 
