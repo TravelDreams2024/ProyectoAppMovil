@@ -1,12 +1,13 @@
 package com.example.traveldreamsapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +29,7 @@ public class RegistroActivity extends AppCompatActivity {
     private EditText editTextName, editTextLastName, editTextEmail, editTextPassword, editTextConfirmPassword;
     private CheckBox checkBoxPrivacy;
     private Button buttonRegister;
+    private TextView textViewPrivacyPolicy;  // Nuevo campo para el TextView de política de privacidad
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,9 @@ public class RegistroActivity extends AppCompatActivity {
         checkBoxPrivacy = findViewById(R.id.checkBoxPrivacy);
         buttonRegister = findViewById(R.id.buttonRegister);
 
+        // Referencia al TextView de política de privacidad
+        textViewPrivacyPolicy = findViewById(R.id.textViewPrivacyPolicy);
+
         // Configuración del botón de registro
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +57,15 @@ public class RegistroActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(RegistroActivity.this, "Debes aceptar la política de privacidad", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        // Listener para abrir la Activity de política de privacidad
+        textViewPrivacyPolicy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegistroActivity.this, PoliticaPrivacidad.class);
+                startActivity(intent);
             }
         });
     }
