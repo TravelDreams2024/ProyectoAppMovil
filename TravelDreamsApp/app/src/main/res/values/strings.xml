@@ -53,8 +53,8 @@
     <!--Politica de Privacidad y Proteccion de Datos-->
 
     <string name="txtprivacitytitle">Leí y Acepto</string>
-    <string name="btnacepto">Leí y Acepto</string>
-    <string name="btnnoacepto">Rechazar y Salir de la Aplicación</string>
+    <string name="btnBackReg">Volver a Registro</string>
+
 
     <string name="txtprivacity">
         1. <b> Introducción:</b> \n <i>En Travel Dreams, valoramos y respetamos su privacidad. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos su información personal cuando utiliza nuestros servicios a través de nuestra página web, aplicaciones móviles y otros servicios asociados. Al utilizar Travel Dreams, usted acepta los términos y condiciones descritos en esta política. </i> \n  \n
