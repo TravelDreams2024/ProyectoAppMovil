@@ -1,6 +1,7 @@
 package com.example.traveldreamsapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -29,7 +30,10 @@ public class RegistroActivity extends AppCompatActivity {
     private EditText editTextName, editTextLastName, editTextEmail, editTextPassword, editTextConfirmPassword;
     private CheckBox checkBoxPrivacy;
     private Button buttonRegister;
-    private TextView textViewPrivacyPolicy;  // Nuevo campo para el TextView de política de privacidad
+    private TextView textViewPrivacyPolicy;
+
+    // Nombre del archivo de preferencias
+    private static final String PREF_NAME = "registro_pref";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,12 +52,16 @@ public class RegistroActivity extends AppCompatActivity {
         // Referencia al TextView de política de privacidad
         textViewPrivacyPolicy = findViewById(R.id.textViewPrivacyPolicy);
 
+        // Cargar datos temporales de SharedPreferences
+        loadFormData();
+
         // Configuración del botón de registro
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (checkBoxPrivacy.isChecked()) {
                     registerUser();
+
                 } else {
                     Toast.makeText(RegistroActivity.this, "Debes aceptar la política de privacidad", Toast.LENGTH_SHORT).show();
                 }
@@ -64,10 +72,41 @@ public class RegistroActivity extends AppCompatActivity {
         textViewPrivacyPolicy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Guardar datos antes de abrir la Activity de política de privacidad
+                saveFormData();
+
                 Intent intent = new Intent(RegistroActivity.this, PoliticaPrivacidad.class);
                 startActivity(intent);
             }
         });
+    }
+
+    // Método para guardar datos en SharedPreferences
+    private void saveFormData() {
+        SharedPreferences preferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("name", editTextName.getText().toString());
+        editor.putString("lastName", editTextLastName.getText().toString());
+        editor.putString("email", editTextEmail.getText().toString());
+        editor.putString("password", editTextPassword.getText().toString());
+        editor.putString("confirmPassword", editTextConfirmPassword.getText().toString());
+        editor.apply();
+    }
+
+    // Método para cargar datos de SharedPreferences
+    private void loadFormData() {
+        SharedPreferences preferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
+        editTextName.setText(preferences.getString("name", ""));
+        editTextLastName.setText(preferences.getString("lastName", ""));
+        editTextEmail.setText(preferences.getString("email", ""));
+        editTextPassword.setText(preferences.getString("password", ""));
+        editTextConfirmPassword.setText(preferences.getString("confirmPassword", ""));
+    }
+
+    // Método para borrar datos de SharedPreferences
+    private void clearFormData() {
+        SharedPreferences preferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
+        preferences.edit().clear().apply();
     }
 
     // Método para registrar el usuario
@@ -125,12 +164,19 @@ public class RegistroActivity extends AppCompatActivity {
             public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+                    clearFormData();  // Limpiar datos guardados
+                    clearForm();      // Limpiar campos de texto
+
+                    // Redireccionar a LoginActivity después del registro exitoso
+                    Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    finish();  // Finalizar RegistroActivity para que no se pueda volver atrás a esta pantalla
                 } else {
                     try {
                         // Leemos el error body como un String
                         String errorBody = response.errorBody().string();
                         if (response.code() == 409 || errorBody.contains("Duplicate entry")) {
-                            Toast.makeText(RegistroActivity.this, "Correo electrónico ya registrado", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistroActivity.this, "Usuario ya registrado", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(RegistroActivity.this, "Error en el registro", Toast.LENGTH_SHORT).show();
                         }
@@ -148,9 +194,19 @@ public class RegistroActivity extends AppCompatActivity {
         });
     }
 
-    // Método para validar nombre y apellido
+    // Método para limpiar el formulario después de un registro exitoso
+    private void clearForm() {
+        editTextName.setText("");
+        editTextLastName.setText("");
+        editTextEmail.setText("");
+        editTextPassword.setText("");
+        editTextConfirmPassword.setText("");
+        checkBoxPrivacy.setChecked(false);
+    }
+
+    // Métodos de validación
     private boolean isNameValid(String name) {
-        String namePattern = "^[a-zA-ZÀ-ÿ' ]+$";  // Permite letras, acentos y apóstrofes
+        String namePattern = "^[a-zA-ZÀ-ÿ' ]+$";
         return name.matches(namePattern);
     }
 
