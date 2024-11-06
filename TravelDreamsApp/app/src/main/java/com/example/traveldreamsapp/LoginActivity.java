@@ -28,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextUsername;
     private EditText editTextPassword;
     private Button buttonLogin;
+    private TextView forgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,16 @@ public class LoginActivity extends AppCompatActivity {
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
+        forgotPassword = findViewById(R.id.forgotPassword); // Asocia el TextView de recuperación de contraseña
+
+        // Configurar el listener para "Olvidé mi contraseña"
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RecoveryPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Redirección al registro al hacer clic en "registrarse"
         TextView registerPrompt = findViewById(R.id.registerPrompt);
@@ -48,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         // Configurar Retrofit
         OkHttpClient client = new OkHttpClient.Builder().build();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dtapp.pythonanywhere.com/api/v1/")
+                .baseUrl("https://dtapp.pythonanywhere.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

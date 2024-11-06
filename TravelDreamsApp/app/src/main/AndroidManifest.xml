@@ -35,6 +35,9 @@
         <activity
             android:name=".RegistroActivity"
             android:exported="true" />
+        <activity
+            android:name=".RecoveryPasswordActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
