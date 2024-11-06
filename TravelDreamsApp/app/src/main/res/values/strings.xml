@@ -145,6 +145,7 @@
     <string name="hint_cemail">Correo Electrónico</string>
     <string name="hint_message">Escribe tu mensaje aquí...</string>
     <string name="submit_button">Enviar</string>
+    <string name="recovery_password_hint">Ingrese su correo electrónico para recuperar su contraseña. Un administrador se pondra en contacto con usted a la brevedad..</string>
 
 </resources>
 

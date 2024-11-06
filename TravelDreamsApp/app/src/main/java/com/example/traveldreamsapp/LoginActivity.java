@@ -39,6 +39,16 @@ public class LoginActivity extends AppCompatActivity {
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
+        forgotPassword = findViewById(R.id.forgotPassword); // Asocia el TextView de recuperación de contraseña
+
+        // Configurar el listener para "Olvidé mi contraseña"
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RecoveryPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -98,6 +108,7 @@ public class LoginActivity extends AppCompatActivity {
             });
         });
     }
+
 
     // Método para alternar la visibilidad de la contraseña
     private void togglePasswordVisibility() {

@@ -53,6 +53,7 @@
                 android:textStyle="bold" />
 
             <!-- Campo Correo Electrónico -->
+
             <EditText
                 android:id="@+id/editTextUsername"
                 android:layout_width="match_parent"
@@ -67,6 +68,7 @@
 
             <!-- Campo de Contraseña con ícono de visibilidad -->
             <com.google.android.material.textfield.TextInputLayout
+                    
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
@@ -95,7 +97,7 @@
 
             <!-- Link Olvidé mi contraseña -->
             <TextView
-                android:id="@+id/forgotPasssword"
+                android:id="@+id/forgotPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
