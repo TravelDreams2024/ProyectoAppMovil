@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_destinos"
+            android:icon="@drawable/ic_destinos"
+            android:title="@string/menu_destinos" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/nav_nosotros"
+            android:icon="@drawable/ic_nosotros"
+            android:title="@string/menu_nosotros" />
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/ic_contacto"
+            android:title="@string/menu_contacto" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario"
+            android:textSize="18sp" />
+
+
+    </group>
+</menu>

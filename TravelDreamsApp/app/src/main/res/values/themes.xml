@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.TravelDreamsApp" parent="Base.Theme.TravelDreamsApp" />
+
+    <style name="Theme.TravelDreamsApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TravelDreamsApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TravelDreamsApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

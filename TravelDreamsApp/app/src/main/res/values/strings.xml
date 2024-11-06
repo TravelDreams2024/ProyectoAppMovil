@@ -1,3 +1,152 @@
 <resources>
     <string name="app_name">TravelDreamsApp</string>
+
+    <!--Bienvenida - 1er Pantalla -->
+    <string name="travel">TRAVEL</string>
+    <string name="dreams">DREAMS</string>
+    <string name="explorar">Explorar</string>
+
+    <!--Navigation Drawer -->
+    <string name="nav_home">Home</string>
+    <string name="nav_destinos">Destinos</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="nav_nosotros">Sobre Nosotros</string>
+    <string name="nav_contacto">Contacto</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_destinos">Destinos</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_nosotros">Nosotros</string>
+
+    <string name="title_activity_navigator_drawer">NavigatorDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--Perfil  - NavigatorDrawer-->
+    <string name="plogin">Iniciar Sesión</string>
+    <string name="pregister">Registrarse</string>
+
+    <!--Login -->
+    <string name="titulo_login">INICIAR SESION</string>
+    <string name="titulo_login_name">Bienvenido</string>
+    <string name="hint_first_name">Nombre</string>
+    <string name="hint_last_name">Apellido</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="forgot_pasword">Olvidé mi contraseña</string>
+    <string name="msjregistrate">¿No tienes cuenta?¡Registrate aqui!</string>
+
+    <!--Registro -->
+    <string name="register_title">INGRESE SUS DATOS</string>
+    <string name="hint_name2">Nombre</string>
+    <string name="hint_last_name2">Apellido</string>
+    <string name="hint_email2">Correo Electonico</string>
+    <string name="hint_password2">Contraseña</string>
+    <string name="hint_confirm_password2">Confirmar Contraseña</string>
+    <string name="conditional_pasword">Requiere: \n 8 caracteres y al menos un carácter especial (!, @, #, $, %)</string>
+
+    <!--Politica de Privacidad y Proteccion de Datos-->
+
+    <string name="txtprivacitytitle">Leí y Acepto</string>
+    <string name="btnBackReg">Volver a Registro</string>
+
+
+    <string name="txtprivacity">
+        1. <b> Introducción:</b> \n <i>En Travel Dreams, valoramos y respetamos su privacidad. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos su información personal cuando utiliza nuestros servicios a través de nuestra página web, aplicaciones móviles y otros servicios asociados. Al utilizar Travel Dreams, usted acepta los términos y condiciones descritos en esta política. </i> \n  \n
+        2. <b> <i>Información que Recopilamos:</i> \n </b>
+            •	<i>Información de contacto:</i> Nombre, dirección de correo electrónico, número de teléfono.\n
+            •	<i>Información de viaje:</i> Detalles de sus reservas, preferencias de viaje, itinerarios.\n
+            •	<i>Información de pago:</i> Detalles de tarjetas de crédito o débito, cuentas bancarias (procesada de forma segura por nuestros proveedores de pago).\n
+            •	<i>Información técnica:</i> Dirección IP, tipo de dispositivo, navegador, cookies y datos de rastreo. \n  \n
+        3. <b>Fines de la Información Solicitada:</b> \n
+            •	<i>Procesar y gestionar sus reservas de viaje.</i>\n
+            •	<i>Enviar actualizaciones y notificaciones relacionadas con su viaje.</i> \n
+            •	<i>Mejorar la experiencia de usuario y ofrecer recomendaciones personalizadas.</i> \n
+            •	<i>Cumplir con requisitos legales y regulatorios. </i> \n
+            •	<i>Proporcionar soporte al cliente y asistencia técnica.</i> \n \n
+        4. <b>Protección de sus Datos:</b> \n En Travel Dreams, tomamos medidas para garantizar la seguridad de su información personal mediante el uso de tecnologías de encriptación y protocolos de seguridad avanzados. Los datos almacenados están protegidos en servidores seguros y solo son accesibles por personal autorizado. Además, trabajamos con proveedores de servicios de confianza que cumplen con las normativas de protección de datos aplicables. \n \n
+        5. <b>Cookies y Tecnologías Similares:</b> \n Utilizamos cookies para mejorar la funcionalidad de nuestra web y personalizar su experiencia. Puede controlar el uso de cookies a través de la configuración de su navegador. Al continuar utilizando nuestra web sin cambiar las preferencias de cookies, usted acepta el uso de estas. \n  \n
+        6. <b>Compartir Información con Terceros:</b> \n No compartimos su información personal con terceros, excepto en las siguientes circunstancias: \n
+            •	Con proveedores de servicios de viaje, como aerolíneas, hoteles y empresas de transporte, para procesar y gestionar sus reservas. \n
+            •	Con proveedores de pago para procesar transacciones seguras. \n
+            •	Cuando sea requerido por la ley o autoridades regulatorias. \n  \n
+        7. <b>Usted tiene derecho a: </b> \n
+            •	Acceder a sus datos personales. \n
+            •	Solicitar la corrección de datos incorrectos. \n
+            •	Solicitar la eliminación de sus datos personales. \n
+            •	Retirar su consentimiento para el procesamiento de datos en cualquier momento. \n
+            Para ejercer sus derechos, por favor póngase en contacto con nosotros en privacidad@traveldreams.com. \n  \n
+        8. <b>Cambios a esta Política:</b>  \n Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Le notificaremos de cualquier cambio publicando la nueva política en nuestra página web y actualizando la fecha de "última actualización". \n \n
+        9. <b>Contacto:</b>  \n Si tiene preguntas o inquietudes sobre esta política, puede contactarnos en: \n \n
+            <i><b>Travel Dreams</b></i> \n
+            <i><b>Correo electrónico:</b> info@traveldreams.com </i> \n
+            <i><b>Teléfono:</b> +34 900 123 456 </i> \n
+    </string>
+
+    <!--Destinos - 2da pantalla -->
+    <string name="titulo_destino">TITULO DEL DESTINO</string>
+    <string name="descripcion_destino">Descripción corta del destino</string>
+    <string name="precio_destino">$00.00</string>
+    <string name="boton_comprar">Comprar</string>
+
+    <!--Destinos - 2da pantalla  - Content Description-->
+    <string name="descripcion_imagen">Imagen del destino</string>
+    <string name="descripcion_titulo_destino">Título del destino mostrado en la tarjeta</string> <!-- Nueva descripción -->
+    <string name="descripcion_precio">Precio del destino mostrado en la tarjeta</string> <!-- Nueva descripción -->
+    <string name="descripcion_boton_comprar">Botón para comprar el destino</string>
+
+    <!-- Títulos y botones -->
+    <string name="hint_name">Nombre y Apellido</string>
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="register_button">Registrarse</string>
+
+    <!--Nosotros-->
+    <string name="quienes_somos">¿Quiénes somos?</string>
+    <string name="description_quienes_somos">Desde hace 20 años, Travel Dreams ha sido la brújula que guía a aventureros de todas las edades en sus viajes más esperados. Nuestra misión trasciende un simple itinerario; es una promesa de aventura, descubrimiento y recuerdos que perduran toda la vida.</string>
+
+    <!-- Nuestro Equipo -->
+    <string name="equipo">Nuestro Equipo</string>
+    <string name="m_1">Cantarino, Emmanuel</string>
+    <string name="m_1_profile">Full Stack</string>
+
+    <string name="m_2">Cascallares, Facundo</string>
+    <string name="m_2_profile">Full Stack</string>
+
+    <string name="m_3">Fernandez, Claudio Ranses</string>
+    <string name="m_3_profile">Full Stack</string>
+
+    <string name="m_4">González, Natalia</string>
+    <string name="m_4_profile">Full Stack</string>
+
+    <string name="m_5">Navarrete, Romina Gabriela</string>
+    <string name="m_5_profile">Full Stack</string>
+
+    <string name="m_6">Oro, Elias</string>
+    <string name="m_6_profile">Full Stack</string>
+
+    <string name="m_7">Ortiz, Fernando Ariel</string>
+    <string name="m_7_profile">Full Stack</string>
+
+    <string name="m_8">Soto Valenzuela, Juan Gabriel</string>
+    <string name="m_8_profile">Full Stack</string>
+
+    <!--Fomulario Contacto -->
+    <string name="contact_title">Contacto</string>
+    <string name="contact_subtitle">Si tienes preguntas, comentarios o sugerencias, por favor, no dudes en enviarnos un mensaje.</string>
+    <string name="hint_cname">Nombre</string>
+    <string name="hint_cemail">Correo Electrónico</string>
+    <string name="hint_message">Escribe tu mensaje aquí...</string>
+    <string name="submit_button">Enviar</string>
+    <string name="recovery_password_hint">Ingrese su correo electrónico para recuperar su contraseña. Un administrador se pondra en contacto con usted a la brevedad..</string>
+
 </resources>
+
+
