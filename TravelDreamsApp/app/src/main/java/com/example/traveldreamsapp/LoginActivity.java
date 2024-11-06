@@ -29,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextUsername;
     private EditText editTextPassword;
     private Button buttonLogin;
+    private TextView forgotPassword;
     private boolean isPasswordVisible = false;
 
     @Override
