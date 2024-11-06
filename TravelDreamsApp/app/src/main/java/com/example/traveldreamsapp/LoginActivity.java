@@ -15,6 +15,7 @@ import com.example.traveldreamsapp.network.ApiService;
 import com.example.traveldreamsapp.network.LoginRequest;
 import com.example.traveldreamsapp.network.LoginResponse;
 
+
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -27,15 +28,26 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextUsername;
     private EditText editTextPassword;
     private Button buttonLogin;
+    private TextView forgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_login);
 
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
+        forgotPassword = findViewById(R.id.forgotPassword); // Asocia el TextView de recuperación de contraseña
+
+        // Configurar el listener para "Olvidé mi contraseña"
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RecoveryPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Redirección al registro al hacer clic en "registrarse"
         TextView registerPrompt = findViewById(R.id.registerPrompt);
@@ -47,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         // Configurar Retrofit
         OkHttpClient client = new OkHttpClient.Builder().build();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dtapp.pythonanywhere.com/api/v1/")
+                .baseUrl("https://dtapp.pythonanywhere.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
@@ -80,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, NavigatorDrawer.class);
                                     startActivity(intent);
                                     finish(); // Cierra la pantalla de login
                                 }

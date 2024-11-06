@@ -5,138 +5,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/fondo_degradado_dos"
     tools:context=".perfil">
 
-    <!-- Ícono de lápiz para editar la foto -->
-
     <!-- Fondo con imagen de degradado -->
-    <ImageView
-        android:id="@+id/bgImageView2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/dashboard"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Nombre -->
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
+    <!-- CardView que agrupa el perfil -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="194dp"
-        android:padding="12dp"
-        android:text="Nombre"
-        android:textSize="18sp"
-        android:textStyle="bold"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Apellido -->
-    <TextView
-        android:id="@+id/tv_full_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
-        android:padding="12dp"
-        android:text="Apellido"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Email -->
-    <TextView
-        android:id="@+id/tv_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="254dp"
-        android:padding="12dp"
-        android:text="Email"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Telefono -->
-    <TextView
-        android:id="@+id/tv_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="284dp"
-        android:padding="12dp"
-        android:text="Telefono"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Dirección -->
-    <TextView
-        android:id="@+id/tv_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="314dp"
-        android:padding="12dp"
-        android:text="Dirección"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Botones -->
-
-    <!--Boton modificar datos-->
-    <Button
-        android:id="@+id/btn_edit_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="94dp"
-        android:text="Modificar Datos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_full_name" />
-
-    <!--Boton modificar Contraseña-->
-    <Button
-        android:id="@+id/btn_edit_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:text="Modificar Contraseña"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_full_name" />
-
-
-    <!-- Foto de perfil-->
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/profile_image"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginBottom="380dp"
-        android:src="@drawable/editar_perfil"
-        android:contentDescription="Foto de perfil"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065"
-        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
-        android:clickable="true"
-        android:focusable="true" />
+        app:layout_constraintTop_toTopOf="parent">
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="686dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="-60dp"
+                app:srcCompat="@drawable/logo_contraste" />
+
+            <!-- Foto de perfil -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image"
+                android:layout_width="128dp"
+                android:layout_height="142dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/editar_perfil"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Apellido -->
+            <TextView
+                android:id="@+id/tv_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Apellido"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Email"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Telefono -->
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Telefono"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Dirección -->
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Dirección"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Botón Modificar Datos -->
+            <Button
+                android:id="@+id/btn_edit_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Modificar Datos" />
+
+            <!-- Botón Modificar Contraseña -->
+            <Button
+                android:id="@+id/btn_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Modificar Contraseña" />
+
+            <!-- Botón Cerrar Sesión -->
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesión" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
